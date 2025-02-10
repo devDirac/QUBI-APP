@@ -1,0 +1,34 @@
+.notification-item {
+    display: flex; /* Para organizar los elementos dentro del <li> */
+    align-items: center;
+    white-space: normal; /* Permitir que el texto haga saltos de línea */
+    word-wrap: break-word; /* Forzar palabras largas a romperse */
+    overflow: hidden; /* Ocultar contenido desbordado */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos si es necesario */
+    max-width: 100%; /* Limitar el ancho del contenedor */
+    background-color: red;
+}
+
+.notification-item .notification-description {
+    white-space: normal; /* Saltos de línea normales */
+    word-break: break-word; /* Permitir romper palabras largas */
+    overflow-wrap: anywhere; /* Otra forma de controlar palabras largas */
+}
+
+.notification-item p {
+    margin: 0; /* Evitar márgenes innecesarios que causen desbordamiento */
+    padding: 0;
+    max-width: 100%; /* Ajustar al contenedor */
+    line-height: 1.4; /* Espaciado entre líneas */
+}
+
+@media (max-width: 600px) {
+    .notification-item {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: flex-start;
+    }
+
+    .notification-item .notification-description {
+        font-size: 0.875rem; /* Ajustar tamaño de fuente */
+    }
+}

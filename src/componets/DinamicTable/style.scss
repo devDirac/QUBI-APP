@@ -1,0 +1,61 @@
+@use '../../App.scss';
+
+
+/* ResponsiveTable.css */
+.responsive-row {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.responsive-cell {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.responsive-label {
+    font-weight: bold;
+    flex-basis: 40%;
+}
+
+.responsive-value {
+    flex-basis: 60%;
+}
+
+@media (min-width: 768px) {
+    .responsive-row {
+        flex-direction: row;
+    }
+
+    .responsive-cell {
+        display: table-cell;
+        padding: 10px;
+    }
+
+    .responsive-label {
+        display: none;
+        /* Oculta las etiquetas en pantallas grandes */
+    }
+
+    .responsive-value {
+        flex-basis: 100%;
+    }
+}
+
+/* .rdt_TableCol:first-child,
+.rdt_TableCell:first-child,
+.rdt_TableCol:nth-child(2),
+.rdt_TableCell:nth-child(2) {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: inherit;
+}
+
+.rdt_TableCol:nth-child(2),
+.rdt_TableCell:nth-child(2) {
+  z-index: 1;
+} */
