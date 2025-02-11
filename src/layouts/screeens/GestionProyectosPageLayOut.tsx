@@ -192,7 +192,7 @@ const GestionProyectosPageLayOut: React.FC = () => {
                                     fecha_registro: r?.fecha_registro,
                                     id: r?.id,
                                     id_usuario: r?.id_usuario,
-                                    foto:`${env.API_URL_DOCUMENTOS + 'storage/app/'+ r?.imagen }`
+                                    foto:`${env.API_URL_DOCUMENTOS + ''+ r?.imagen }`
                                 }
                             })}
                         />

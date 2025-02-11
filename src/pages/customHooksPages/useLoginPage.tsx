@@ -6,7 +6,6 @@ import { loginHttp, setUser } from "../../actions/auth";
 import { getErrorHttpMessage } from "../../utils";
 import { catalogos } from "../../utils/constants";
 import { useIntl } from "react-intl";
-import { getNotificacionesPorUsuarioHTTP, setNotificaciones } from "../../actions/notificaciones";
 
 export const useLoginPage = () => {
   const dispatch = useDispatch();

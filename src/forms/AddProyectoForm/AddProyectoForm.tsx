@@ -124,7 +124,7 @@ const AddProyectoForm: React.FC<any> = (props: any) => {
         }
 
         if (props?.item && props?.item?.imagen) {
-            setFoto(`${env.API_URL_DOCUMENTOS + 'storage/app/'+ props?.item?.imagen } ?v=${Math.random()+''} `)
+            setFoto(`${env.API_URL_DOCUMENTOS + ''+ props?.item?.imagen } ?v=${Math.random()+''} `)
         }
         if (props?.item) {
             validate();
