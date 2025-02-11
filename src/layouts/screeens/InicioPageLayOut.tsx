@@ -271,7 +271,7 @@ const InicioPageLayOut: React.FC = () => {
                     data?.length ? data?.map((r: any, key: any) => (
                         <Grid item lg={3} md={6} sm={12} style={{ marginBottom: 20 }} key={key}>
                             <BookingCard
-                                image={`${env.API_URL_DOCUMENTOS + 'storage/app/' + r?.imagen} ?v=${Math.random() + ''} `}
+                                image={`${env.API_URL_DOCUMENTOS + '' + r?.imagen} ?v=${Math.random() + ''} `}
                                 title={r?.titulo}
                                 description={r?.description}
                                 price={`Misiones: ${(r?.reportes || [])?.length}  `}
